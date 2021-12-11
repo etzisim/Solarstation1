@@ -64,7 +64,7 @@ void setup()
   Serial.println(analogRead(A0));
   ESP.wdtFeed();
 
-   if (BatteryVoltage < 3 && BatteryVoltage > 0.1)
+  if (BatteryVoltage < 3 && BatteryVoltage > 0.1)
   {
     Serial.println("Battery Voltage to low, max Sleeptime");
     delay(3000);
